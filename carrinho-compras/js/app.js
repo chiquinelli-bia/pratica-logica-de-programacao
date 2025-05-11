@@ -1,3 +1,6 @@
+let totalGeral;
+limpar();
+
 function adicionar () {
     let produtos = document.getElementById('produto');
     let selecionado = produtos.value;
@@ -15,4 +18,10 @@ function adicionar () {
     totalGeral = totalGeral + conta;
     let campoTotal = document.getElementById('valor-total');
     campoTotal.textContent = `R$ ${totalGeral}`;
+}
+
+function limpar() {
+    totalGeral = 0;
+    document.getElementById('lista-produtos').innerHTML = '';
+    document.getElementById('valor-total').textContent = 'R$0';
 }
