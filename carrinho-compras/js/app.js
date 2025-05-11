@@ -13,7 +13,7 @@ function adicionar () {
 
     let listaProdutos = document.getElementById('lista-produtos');
 
-    listaProdutos.innerHTML = listaProdutos.innerHTML =`<section class="carrinho__produtos__produto"><span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R${preco}</span></section>`;
+    listaProdutos.innerHTML = listaProdutos.innerHTML + `<section class="carrinho__produtos__produto"><span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R${preco}</span></section>`;
 
     totalGeral = totalGeral + conta;
     let campoTotal = document.getElementById('valor-total');
