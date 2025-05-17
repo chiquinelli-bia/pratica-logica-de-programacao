@@ -3,16 +3,33 @@ let listaNomes = [];
 //por meio do botao adicionar() guardar o nome em <p id="lista-amigos"></p>
 function adicionar() {
     let nomes = document.getElementById('nome-amigo').value;
-    let nomesIncluidos = document.getElementById('lista-amigos').innerText;
+    // let nomesIncluidos = document.getElementById('lista-amigos').innerText;
 
     listaNomes.push(nomes);
     console.log(listaNomes);
 
-    exibirText('lista-amigos', listaNomes);
+    let nomesIncluidos = document.getElementById('lista-amigos');
+    nomesIncluidos.innerHTML = listaNomes;
+
+    document.getElementById('nome-amigo').value = '';
 }
-function exibirText(id, texto) {
-    let campo = document.getElementById(id);
-    campo.innerHTML = texto;
+
+function sortear(listaNomes){
+    embaralha(listaNomes);
+    
 }
-//no reiniciar() resetar os campos
+function embaralha(lista) {
+
+    for (let indice = lista.length; indice; indice--) {
+
+        const indiceAleatorio = Math.floor(Math.random() * indice);
+
+        // atribuição via destructuring
+        [lista[indice - 1], lista[indiceAleatorio]] = 
+            [lista[indiceAleatorio], lista[indice - 1]];
+    }
+}
 //no botao sortear() fazer um sortear o outro e exibir em <p id="lista-sorteio"></p>
+//no reiniciar() resetar os campos
+function reiniciar() {
+}
