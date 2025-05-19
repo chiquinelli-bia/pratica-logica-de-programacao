@@ -3,8 +3,12 @@ let listaNomes = [];
 function adicionar() {
     let nomes = document.getElementById('nome-amigo').value;
 
+    if (nomes == '' || listaNomes.includes(nomes)) {
+        alert('nome inválido, insira outro nome');
+        return;
+    }
+
     listaNomes.push(nomes);
-    console.log(listaNomes);
 
     let nomesIncluidos = document.getElementById('lista-amigos');
     nomesIncluidos.innerHTML = listaNomes;
