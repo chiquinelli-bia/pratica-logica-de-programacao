@@ -1,9 +1,7 @@
-//guardar o nome do amigo no input nome-amigo
 let listaNomes = [];
-//por meio do botao adicionar() guardar o nome em <p id="lista-amigos"></p>
+
 function adicionar() {
     let nomes = document.getElementById('nome-amigo').value;
-    // let nomesIncluidos = document.getElementById('lista-amigos').innerText;
 
     listaNomes.push(nomes);
     console.log(listaNomes);
@@ -14,9 +12,22 @@ function adicionar() {
     document.getElementById('nome-amigo').value = '';
 }
 
-function sortear(listaNomes){
+function sortear() {
+    if (listaNomes.length < 4) {
+        alert('Adicione pelo menos 4 amigos!');
+        return;
+    }
+
     embaralha(listaNomes);
-    
+
+    let sorteio = document.getElementById('lista-sorteio');
+    for (let i = 0; i < listaNomes.length; i++) {
+        if (i == listaNomes.length - 1) {
+            sorteio.innerHTML = sorteio.innerHTML + listaNomes[i] +' --> ' +listaNomes[0] + '<br/>';
+        } else {
+            sorteio.innerHTML = sorteio.innerHTML + listaNomes[i] +' --> ' +listaNomes[i + 1] + '<br/>';
+        }
+    }
 }
 function embaralha(lista) {
 
@@ -24,12 +35,10 @@ function embaralha(lista) {
 
         const indiceAleatorio = Math.floor(Math.random() * indice);
 
-        // atribuição via destructuring
         [lista[indice - 1], lista[indiceAleatorio]] = 
-            [lista[indiceAleatorio], lista[indice - 1]];
+        [lista[indiceAleatorio], lista[indice - 1]];
     }
 }
-//no botao sortear() fazer um sortear o outro e exibir em <p id="lista-sorteio"></p>
 //no reiniciar() resetar os campos
 function reiniciar() {
 }
