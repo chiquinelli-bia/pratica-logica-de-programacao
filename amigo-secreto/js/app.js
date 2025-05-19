@@ -39,6 +39,8 @@ function embaralha(lista) {
         [lista[indiceAleatorio], lista[indice - 1]];
     }
 }
-//no reiniciar() resetar os campos
 function reiniciar() {
+    amigos = [];
+    document.getElementById('lista-amigos').innerHTML = '';
+    document.getElementById('lista-sorteio').innerHTML = '';
 }
