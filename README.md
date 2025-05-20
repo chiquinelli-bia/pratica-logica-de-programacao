@@ -26,7 +26,7 @@ A lógica em JavaScript envolve leitura de valores, cálculos, manipulação do 
 
 🎫 Projeto 4: Compra de Ingressos
 Simula a venda de ingressos em um site fictício.
-O usuário escolhe o tipo de ingresso, informa a quantidade e clica em "Comprar", atualizando o total disponível na tela  e impede novas compras se esgotar.
+O usuário escolhe o tipo de ingresso, informa a quantidade e clica em "Comprar", atualizando o total disponível na tela e impede novas compras se esgotar.
 A lógica envolve validações, formulário, decremento de estoque, manipulação do DOM e exibição de alertas.
 
 🎁 Projeto 5: Sorteador de Amigo Secreto.
@@ -36,24 +36,36 @@ Também é possível reiniciar a lista e começar um novo sorteio. Envolve manip
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-As técnicas e tecnologias utilizadas pra isso são:
+As técnicas e tecnologias utilizadas para isso são:
 
-- `HTML5:` Utilizado para estruturar o conteúdo da página, com ênfase na acessibilidade e semântica.
+🎲 Aprendizado: manipulação de inputs, uso de funções para geração de números aleatórios, controle de estado visual com classes CSS.
+Utilidade: lógica de programação, manipulação dinâmica do DOM e validação de dados, habilidades básicas para front-end.
 
-- `Flexbox:` Usado para criar layouts flexíveis e dinâmicos, permitindo um controle mais eficiente da disposição dos elementos.
-- `Grid Layout:` Complementa o Flexbox, ideal para a criação de layouts mais complexos e com múltiplas colunas.
-- `Media Queries:` Fundamentais para a criação de designs responsivos, ajustando o layout conforme o tamanho da tela.
-- `BEM` (Block, Element, Modifier): Aplicado para nomeação de classes e organização do código, promovendo maior reutilização e manutenção.
-- `CSS3:` Empregado para estilizar a página, com foco em responsividade e design moderno, Abaixo alguns tópicos abordados no curso:
-  - _Pseudo-classes_ `:hover,` `:active,` `:focus,` 
-  - _Positioning_ como `relative` e `absolute`
-  - _Combinadores CSS_ 
-  - _Unidades de Viewport_  como `vw,` `vh` `vmin,` `vmax`
-  - _Transições e Animações:_ 
-  - _Efeito de Gradiente no Texto_ como `Background Clip` e `Webkit`
-  - _Background Clip (e Webkit_
-  - _Pseudo-elementos_ como `::before,` `::after,` `::placeholder`
+🕹 Aprendizado: controle de estado, manipulação de eventos, classes CSS dinâmicas, interação com elementos do DOM.
+Utilidade no mercado: gerenciamento de estados em aplicações web, manipulação dinâmica de UI e UX responsiva.
+
+🛒 Aprendizado: leitura e tratamento de valores numéricos, manipulação de strings, atualização dinâmica de conteúdo HTML.
+Utilidade no mercado: lógica para e-commerce, cálculos dinâmicos e experiência de usuário na gestão de listas e valores.
+
+🎫 Aprendizado: validação de formulários, controle de estoque, lógica condicional e comunicação com o usuário via alertas.
+Utilidade no mercado: controle de estados complexos, validação e feedback, fundamentais para sistemas de venda e gestão.
+
+🎁 Aprendizado: manipulação avançada de arrays, lógica de embaralhamento, interação com o usuário via inputs e alertas.
+Utilidade no mercado: compreensão de algoritmos de embaralhamento e sorteio, manipulação eficiente do DOM e experiência de usuário.
+
+### 📌 Resumo das Tecnologias e Aprendizados
+- JavaScript: manipulação de eventos, controle de estado, arrays, funções, aleatoriedade, validação e interação dinâmica com HTML e CSS.
+- Manipulação do DOM: leitura e alteração de elementos, atualização dinâmica da interface com base em ações do usuário.
+- Lógica de programação: desenvolvimento de algoritmos para embaralhamento, sorteio, cálculos e controle de fluxo (condicionais e loops).
+- Validação de dados: tratamento de entradas do usuário para garantir integridade dos dados e evitar erros.
+- Experiência do usuário: feedback visual e por alertas para facilitar o entendimento das ações realizadas.
 
 ## 📁 Acesso ao projeto
 
-Você pode [ acessar o Alura Books através deste link](https://alura-plus-flame-theta-93.vercel.app/) 
+Você pode acessar os projetos através destes links:
+
+- [🎲 Sorteador de Números](https://sorteador-numeros-pratica-logica-de-programacao-pkeez2rgi.vercel.app/)
+- [🕹 AluGames](https://chiquinelli-pratica-logica-de-programacao--ecru.vercel.app/#)
+- [🛒 Carrinho de Compras](https://carrinho-compras-pratica-logica-de-programacao-i3tl6rmww.vercel.app/)
+- [🎫 Compra de Ingressos](https://ingressos-pratica-logica-de-programacao-7ry1hxg88.vercel.app/)
+- [🎁 Sorteador de Amigo Secreto](https://amigo-secreto-pratica-logica-de-programacao-gwj9shdxg.vercel.app/)
